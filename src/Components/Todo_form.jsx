@@ -7,7 +7,7 @@ const Todo_form = ({setTasks}) => {
   const [data, setData]= useState({
     task:"",
     status:'todo',
-    tags:[]
+    tags:[ ]
   })
 
   const cheking =(tag)=>{
@@ -52,6 +52,7 @@ const Todo_form = ({setTasks}) => {
 
   return (
       <header>
+        <h1>All-in-One ToDo and Task Tracker</h1>
         <form action="" onSubmit={handlesubmit} className='form'>
           <div className='input_parent'>
           <input type="text" className='todo_input'
@@ -63,10 +64,10 @@ const Todo_form = ({setTasks}) => {
           </div>
         <div className='tags_btn'>
           <div className='tags_form'>
-            <Tag className="tags" tagName='HTML'selectTag={selectTag} selected={cheking("HTML")}/>
-            <Tag className="tags" tagName='CSS' selectTag={selectTag} selected={cheking("CSS")} />
-            <Tag className="tags" tagName='Javascript' selectTag={selectTag} selected={cheking("Javascript")} />
-            <Tag className="tags" tagName='Reactjs' selectTag={selectTag} selected={cheking("Reactjs")} />
+            <Tag tagName='HTML'selectTag={selectTag} selected={cheking("HTML")}/>
+            <Tag tagName='CSS' selectTag={selectTag} selected={cheking("CSS")} />
+            <Tag tagName='Javascript' selectTag={selectTag} selected={cheking("Javascript")} />
+            <Tag tagName='Reactjs' selectTag={selectTag} selected={cheking("Reactjs")} />
           </div>
           <div className='tags_select'>
           <div className="select_parent">

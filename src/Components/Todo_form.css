@@ -57,15 +57,17 @@
     width: 100%;
 }
 
+
+
+/* tag.jsx */
 .tags{
     border: none;
-    font-size: 14px;
     letter-spacing: 1px;
     cursor: pointer;
-    padding: 4px 14px;
     border-radius: 12px;
     width: fit-content;
 }
+
 
 .select_parent, option{
     align-items: center;

@@ -10,20 +10,26 @@
     box-sizing: border-box;
     font-family: system-ui;
     font-size: 16px;
-    max-width: 1000px; 
+    max-width: 1100px; 
 }
 
 .app_main{
-    display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(100px, 1fr)) ;
-    gap: 20px;
     width: 100%;
+    background-color:rgb(255,255,255,0.06);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    overflow:auto;
 }
-
+.taskcolum{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(20px, 1fr)) ;
+    gap: 20px;
+    min-width: 940px;
+}
 
 @media screen and (max-width:480px){
     .app{
         padding: 10px;
-        font-size: 13px;
     }
 }

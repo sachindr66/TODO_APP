@@ -1,3 +1,4 @@
+
 .task_card{
     display: flex;
     flex-direction: column;
@@ -17,15 +18,12 @@
 }
 
 .card_tags{
-    display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(80px, 1fr)) ;
+    display: flex;
+    flex-wrap: wrap;
     gap: 6px;
-    background-color: red;
 }
 
-.tags{
 
-}
 
 .delete_btn{
     cursor: pointer;
