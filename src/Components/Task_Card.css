@@ -1,0 +1,67 @@
+.task_card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    box-shadow: 1px 1px 20px #ef9ddf inset;
+    box-sizing: border-box;
+    background: #ffffff1a;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
+
+.title{
+    font-size: 20px;
+    width: 100%;
+}
+
+.card_tags{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(80px, 1fr)) ;
+    gap: 6px;
+    background-color: red;
+}
+
+.tags{
+
+}
+
+.delete_btn{
+    cursor: pointer;
+    background: #ff4b5c;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    transition: background 0.3s ease;
+}
+
+.delete_btn:hover {
+    background: #ff333d;
+}
+
+@media screen and (max-width:480px){
+    .tags{
+        font-size: 12px;
+    }
+}
+
+
+/* Tasks_Column */
+
+.task_column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task_heding{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.icon{
+    width: fit-content;
+}

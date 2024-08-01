@@ -1,0 +1,135 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input_parent{
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 26px;
+    background: #ffffff1a;
+    box-shadow: 0 4px 8px #00000033;
+    backdrop-filter: blur(10px);
+    padding: 6px;
+    width: 100%;
+}
+
+.todo_input{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 24px;
+    background: #ffffffb3;
+    box-shadow: inset 0 2px 4px #0000001a;
+    font-size: 16px;
+    outline: none;
+    transition: background 0.3s ease;
+    box-sizing: border-box;
+}
+
+.todo_input:focus{
+    color: #383838;
+    background : #ffffff;
+  }
+
+.tags_btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.tags_select{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.tags_form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: fit-content;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.tags{
+    border: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 4px 14px;
+    border-radius: 12px;
+    width: fit-content;
+}
+
+.select_parent, option{
+    align-items: center;
+}
+
+
+select{
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+    border: navajowhite;
+    box-sizing: border-box;
+    background: #ffffff1a;
+    box-shadow: 0 4px 8px #00000033;
+    backdrop-filter: blur(10px);
+    min-width: 120px;
+}
+.options{
+    outline: none;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    background: #492774;
+    backdrop-filter: blur(10px);
+}
+
+
+.addtask_btn{
+    min-width: 100px;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #ff4b5c;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.addtask_btn:hover {
+    background: #ff333d;
+}
+
+
+
+@media screen and (max-width:780px){
+   
+    .tags_select{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:480px){
+   
+    .tags_btn{
+        flex-direction: column;
+    }
+
+    .tags_select{
+        flex-direction: column;
+    }
+
+  
+    
+}

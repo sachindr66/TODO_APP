@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+
+}
+
+body{
+  background-color: #2b1547;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: auto;
+  /* background: linear-gradient(135deg, #6e8efb, #a777e3); */
+  background-image: radial-gradient(at 19% 45%, #621e45 0, transparent 50%), radial-gradient(at 42% 46%, #621e45 0, transparent 50%), radial-gradient(at 10% 43%, #621e45 0, transparent 50%), radial-gradient(at 98% 18%, #3b0d78 0, transparent 50%), radial-gradient(at 40% 20%, #2b1547 0, transparent 50%), radial-gradient(at 80% 0, #2b1547 0, transparent 50%);
+  /* background: linear-gradient(134deg, #6c00c5d7, #003983be, #990099c5); */
+  /* background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); */
+}
