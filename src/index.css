@@ -6,18 +6,18 @@
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
- 
-
 }
 
 body{
-  background-color: #2b1547;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  margin: auto;
-  /* background: linear-gradient(135deg, #6e8efb, #a777e3); */
-  background-image: radial-gradient(at 19% 45%, #621e45 0, transparent 50%), radial-gradient(at 42% 46%, #621e45 0, transparent 50%), radial-gradient(at 10% 43%, #621e45 0, transparent 50%), radial-gradient(at 98% 18%, #3b0d78 0, transparent 50%), radial-gradient(at 40% 20%, #2b1547 0, transparent 50%), radial-gradient(at 80% 0, #2b1547 0, transparent 50%);
-  /* background: linear-gradient(134deg, #6c00c5d7, #003983be, #990099c5); */
-  /* background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); */
+  min-height: 100vh;
+  /* padding: 40px; */
+  object-fit: cover;
+  
+  background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+   /* background: linear-gradient(#2E3192 , #1BFFFF); */
+   /* background: url(https://cdn.vectorstock.com/i/1000x1000/65/49/black-hexagon-rgb-background-vector-37936549.webp); */
 }

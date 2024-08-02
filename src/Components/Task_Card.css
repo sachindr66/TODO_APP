@@ -4,12 +4,18 @@
     flex-direction: column;
     gap: 10px;
     height: 100%;
-    box-shadow: 1px 1px 20px #ef9ddf inset;
     box-sizing: border-box;
     background: #ffffff1a;
     border-radius: 16px;
     backdrop-filter: blur(10px);
     padding: 20px;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(0, 255, 0, 0.1)
+    );
+    border: 1px solid #ffffff4d;
+
 }
 
 .title{
@@ -61,5 +67,6 @@
 }
 
 .icon{
-    width: fit-content;
+    width: 30px;
+    height: 30px;
 }

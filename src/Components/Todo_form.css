@@ -1,7 +1,31 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: 1100px;
+    gap: 20px;
+}
+h1{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    /* background-image: linear-gradient(136deg, #ffaf7b, #d76d77); */
+    background-image: linear-gradient(136deg, #9b5de5,#d76d77, #f15bb5);
+}
+
 .form{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
 }
 
 .input_parent{
@@ -68,11 +92,9 @@
     width: fit-content;
 }
 
-
-.select_parent, option{
+/* .select_parent, option{
     align-items: center;
-}
-
+} */
 
 select{
     border-radius: 20px;
@@ -80,39 +102,42 @@ select{
     padding: 10px;
     border: navajowhite;
     box-sizing: border-box;
+    font-size: 16px;
     background: #ffffff1a;
     box-shadow: 0 4px 8px #00000033;
     backdrop-filter: blur(10px);
+    background: linear-gradient(136deg, #ffaf7b, #d76d77);
     min-width: 120px;
 }
+
 .options{
     outline: none;
     padding: 10px;
     border: none;
     box-sizing: border-box;
-    background: #492774;
-    backdrop-filter: blur(10px);
+    background: #d76d78e2;
 }
-
 
 .addtask_btn{
     min-width: 100px;
     align-items: center;
-    border-radius: 4px;
-    cursor: pointer;
-    background: #ff4b5c;
     border: none;
-    border-radius: 20px;
-    color: white;
+    border-radius: 30px;
     padding: 10px 20px;
-    font-size: 16px;
-    white-space: nowrap;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease; 
+    background: linear-gradient(136deg, #ffaf7b, #d76d77);
+    
 }
 
 .addtask_btn:hover {
-    background: #ff333d;
+    background: linear-gradient(135deg, #d76d77, #ffaf7b);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 
 
 @media screen and (max-width:780px){
@@ -131,7 +156,5 @@ select{
     .tags_select{
         flex-direction: column;
     }
-
-  
     
 }

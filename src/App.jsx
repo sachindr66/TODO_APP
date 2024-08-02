@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import Todo_form from './Components/Todo_form'
 import './App.css'
 import TaskColumn from './Components/TaskColumn'
-import progress from './assets/react.svg'
-import todo from './assets/todo.svg'
-import done from './assets/todo.svg'
+import progress from './assets/progress.png'
+import todo from './assets/todo.png'
+import done from './assets/correct.png'
 
 const oldTask=localStorage.getItem("tasks")
 console.log(oldTask)

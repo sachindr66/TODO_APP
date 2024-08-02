@@ -6,21 +6,55 @@
     width: 100%;
     gap: 40px;
     margin: auto;
-    padding: 40px;
+    padding: 20px;
     box-sizing: border-box;
     font-family: system-ui;
     font-size: 16px;
-    max-width: 1100px; 
+    max-width: 1100px;
+ 
 }
 
 .app_main{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    background-color:rgb(255,255,255,0.06);
-    padding: 10px;
+    background-color:#ffffff0f;
+    padding: 20px;
     box-sizing: border-box;
-    border-radius: 1rem;
-    overflow:auto;
+    border-radius: 16px 16px 6px 6px;
+    overflow-x:scroll;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  
+
+    &::-webkit-scrollbar-track {
+        background: #ffffff0f;  
+        border-radius: 10px;  
+    }
+
+    &::-webkit-scrollbar{
+        height: 6px;
+        border-radius: 10px;
+    }
+
+    &.app_main::-webkit-scrollbar-thumb {
+        background: #888;  
+        border-radius: 10px;  
+    }
+
 }
+
+.app_main::before{
+    content: '';
+    background-color: red;
+}
+
+
+
 .taskcolum{
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(20px, 1fr)) ;

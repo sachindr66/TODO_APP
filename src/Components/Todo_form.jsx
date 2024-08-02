@@ -51,7 +51,7 @@ const Todo_form = ({setTasks}) => {
 
 
   return (
-      <header>
+      <header className='header'>
         <h1>All-in-One ToDo and Task Tracker</h1>
         <form action="" onSubmit={handlesubmit} className='form'>
           <div className='input_parent'>
