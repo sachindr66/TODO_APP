@@ -2,25 +2,35 @@
 .task_card{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    height: 100%;
+    gap: 16px;
     box-sizing: border-box;
     background: #ffffff1a;
     border-radius: 16px;
     backdrop-filter: blur(10px);
-    padding: 20px;
+    padding:  20px;
     background: linear-gradient(
       135deg,
-      rgba(255, 255, 255, 0.2),
-      rgba(0, 255, 0, 0.1)
+      #ffffff33,
+      #ff19001a
     );
     border: 1px solid #ffffff4d;
+    cursor: grab;
+} 
 
+.task_card:active{
+    opacity: 0.8;
+    box-shadow: 1px 1px 30px 30px #ff190041 inset;
 }
 
 .title{
+    font-weight: bold;
     font-size: 20px;
     width: 100%;
+    background: linear-gradient(to right, rgb(89, 6, 74), rgb(247, 49, 38));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
 }
 
 .card_tags{
@@ -32,13 +42,22 @@
 
 
 .delete_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
     cursor: pointer;
     background: #ff4b5c;
     border: none;
     border-radius: 20px;
     color: white;
-    padding: 10px;
+    padding: 8px;
     transition: background 0.3s ease;
+    font-size: 16px;
+}
+
+.delet_icon{
+    width: fit-content;
 }
 
 .delete_btn:hover {
@@ -57,13 +76,22 @@
 .task_column{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    box-shadow: 1px 1px 10px #f8c7c7 ;
+    padding: 10px;
+    border-radius: 16px;
+    height: 100%;
 }
 
 .task_heding{
     display: flex;
     align-items: center;
     gap: 4px;
+    background: linear-gradient(to right, rgb(89, 6, 74), rgb(247, 49, 38));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
 }
 
 .icon{

@@ -4,8 +4,6 @@
   box-sizing: border-box;
   width: 100%;
   color: white;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 body{
@@ -14,10 +12,6 @@ body{
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  /* padding: 40px; */
-  object-fit: cover;
-  
-  background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
-   /* background: linear-gradient(#2E3192 , #1BFFFF); */
+  background: linear-gradient(136deg, #3a1c71, #d76d77, #ffaf7b);
    /* background: url(https://cdn.vectorstock.com/i/1000x1000/65/49/black-hexagon-rgb-background-vector-37936549.webp); */
 }

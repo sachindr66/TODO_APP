@@ -1,0 +1,18 @@
+.drop_area{
+    height: 100px;
+    width: 100%;
+    background: #ffffff1a;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(
+      136deg,
+      #ffffff33,
+      #00ff001a
+    );
+    border: 1px solid #ffffff4d;
+    cursor: grab;
+}
+
+.hide_drop{
+    opacity: 0;
+}
