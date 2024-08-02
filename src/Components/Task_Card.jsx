@@ -3,12 +3,17 @@ import Tag from './Tag'
 import delet from '../assets/delete.svg'
 
 const Task_Card = ({title,tags, handleDelete,index, setActiveCard}) => {
+  const handleTouchStart = () => setActiveCard(null);
+  const handleTouchEnd = () => setActiveCard(null);
 
   return (
     <div className='task_card'
     draggable
     onDragStart={()=>setActiveCard(index)}
     onDragEnd={()=>{setActiveCard(null)}}
+    onTouchStart={handleTouchStart}
+    onTouchEnd={handleTouchEnd}
+    
     >
               <p className='title'>{title}</p>
         <div className='card_tags'>
