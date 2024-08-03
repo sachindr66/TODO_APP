@@ -13,7 +13,10 @@ const TaskColumn = ({ title,
   onDrop
 }) => {
   return (
-      <section className='task_column'>
+    <div className='tasks'>
+      <section className='task_column'
+      onDrop={() => onDrop(status)}
+       onDragOver={(e) => e.preventDefault()} >
         <h2 className='task_heding'><img className='icon' src={icon} alt="" width={20} height={20} />{title}</h2>
         <DropArea onDrop={() => onDrop(status, 0)} />
         {tasks.map((task, index) =>
@@ -31,6 +34,7 @@ const TaskColumn = ({ title,
           )
         )}
       </section>
+    </div>
   )
 }
 
