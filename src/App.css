@@ -6,7 +6,6 @@
     width: 100%;
     gap: 40px;
     padding: 20px;
-    box-sizing: border-box;
     font-family: system-ui;
     font-size: 16px;
     max-width: 1100px;
@@ -15,8 +14,6 @@
 }
 
 .app_main{
-    display: flex;
-    flex-direction: column;
     width: 100%;
     background-color:#ffffff0f;
     padding: 20px;
@@ -61,4 +58,85 @@
     .app{
         padding: 10px;
     }
+    .app_main{
+        border-radius: 10px;
+    }
 }
+/*  
+.app {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+  }
+  
+  .app_main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .taskcolum {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tasks {
+    flex: 1;
+  }
+  
+  .task_column {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .task_heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .task_card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .card_tags {
+    margin: 10px 0;
+  }
+  
+  .delete_btn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .delete_icon {
+    margin-right: 5px;
+  }
+  
+  .tags {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px 10px;
+  }
+   */

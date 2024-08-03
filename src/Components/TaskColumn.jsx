@@ -13,7 +13,6 @@ const TaskColumn = ({ title,
   onDrop
 }) => {
   return (
-    <div className='tasks'>
       <section className='task_column'>
         <h2 className='task_heding'><img className='icon' src={icon} alt="" width={20} height={20} />{title}</h2>
         <DropArea onDrop={() => onDrop(status, 0)} />
@@ -32,7 +31,6 @@ const TaskColumn = ({ title,
           )
         )}
       </section>
-    </div>
   )
 }
 

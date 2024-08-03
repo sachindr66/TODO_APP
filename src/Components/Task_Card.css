@@ -64,11 +64,7 @@
     background: #ff333d;
 }
 
-@media screen and (max-width:480px){
-    .tags{
-        font-size: 12px;
-    }
-}
+
 
 
 /* Tasks_Column */
@@ -97,4 +93,13 @@
 .icon{
     width: 30px;
     height: 30px;
+}
+
+
+@media screen and (max-width:480px){
+
+    .task_card ,.task_column{
+        border-radius: 10px;
+    }
+  
 }

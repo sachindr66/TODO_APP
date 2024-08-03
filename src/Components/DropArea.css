@@ -1,8 +1,8 @@
 .drop_area{
-    height: 100px;
+    height: 80px;
     width: 100%;
     background: #ffffff1a;
-    border-radius: 16px;
+    border-radius: 10px;
     backdrop-filter: blur(10px);
     background: linear-gradient(
       136deg,
@@ -10,9 +10,29 @@
       #00ff001a
     );
     border: 1px solid #ffffff4d;
-    cursor: grab;
+    border: 2px dashed #aaa;
+  padding: 16px;
+  text-align: center;
+  cursor: grab;
 }
 
 .hide_drop{
     opacity: 0;
 }
+
+/* .drop_area {
+  background-color: #e0e0e0;
+  border: 2px dashed #aaa;
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.drop_area.show {
+  background-color: #d0d0d0;
+}
+
+.hide_drop {
+  display: none;
+} */
