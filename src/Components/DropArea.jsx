@@ -23,6 +23,10 @@ const DropArea = ({ onDrop }) => {
     setShowDrop(false);
   };
 
+  const handleTouchMove = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div
       onDragEnter={handleDragEnter}
@@ -31,6 +35,7 @@ const DropArea = ({ onDrop }) => {
       onDragOver={(e) => e.preventDefault()}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
+      onTouchMove={handleTouchMove}
       className={showDrop ? 'drop_area' : 'hide_drop'}
     >
       here

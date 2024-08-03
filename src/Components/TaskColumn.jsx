@@ -1,10 +1,10 @@
+import React from 'react';
+import Task_Card from './Task_Card';
+import './Task_Card.css';
+import DropArea from './DropArea';
 
-import React from 'react'
-import Task_Card from './Task_Card'
-import './Task_Card.css'
-import DropArea from './DropArea'
-
-const TaskColumn = ({ title,
+const TaskColumn = ({
+  title,
   icon,
   tasks,
   status,
@@ -14,13 +14,19 @@ const TaskColumn = ({ title,
 }) => {
   return (
     <div className='tasks'>
-      <section className='task_column'
-      onDrop={() => onDrop(status)}
-       onDragOver={(e) => e.preventDefault()} >
-        <h2 className='task_heding'><img className='icon' src={icon} alt="" width={20} height={20} />{title}</h2>
+      <section
+        className='task_column'
+        onDrop={() => onDrop(status)}
+        onDragOver={(e) => e.preventDefault()}
+        onTouchEnd={() => onDrop(status)}
+      >
+        <h2 className='task_heding'>
+          <img className='icon' src={icon} alt="" width={20} height={20} />
+          {title}
+        </h2>
         <DropArea onDrop={() => onDrop(status, 0)} />
         {tasks.map((task, index) =>
-          task.status === status && (
+          task.status === status ? (
             <React.Fragment key={index}>
               <Task_Card
                 title={task.task}
@@ -29,13 +35,13 @@ const TaskColumn = ({ title,
                 index={index}
                 setActiveCard={setActiveCard}
               />
-        <DropArea onDrop={() => onDrop(status, index + 1)} />
+              <DropArea onDrop={() => onDrop(status, index + 1)} />
             </React.Fragment>
-          )
+          ) : null
         )}
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default TaskColumn
+export default TaskColumn;
