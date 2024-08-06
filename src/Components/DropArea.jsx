@@ -1,46 +1,23 @@
-import React, { useState } from 'react';
-import './DropArea.css';
+import React, { useState } from 'react'
+import './DropArea.css'
 
-const DropArea = ({ onDrop }) => {
-  const [showDrop, setShowDrop] = useState(false);
+const DropArea = ({onDrop}) => {
 
-  const handleDragEnter = () => setShowDrop(true);
-  const handleDragLeave = () => setShowDrop(false);
-  const handleDrop = (e) => {
-    e.preventDefault();
-    onDrop();
-    setShowDrop(false);
-  };
-
-  const handleTouchStart = (e) => {
-    e.preventDefault();
-    setShowDrop(true);
-  };
-
-  const handleTouchEnd = (e) => {
-    e.preventDefault();
-    onDrop();
-    setShowDrop(false);
-  };
-
-  const handleTouchMove = (e) => {
-    e.preventDefault();
-  };
-
+    const [showDrop, setShowDrop]=useState(false)
   return (
-    <div
-      onDragEnter={handleDragEnter}
-      onDragLeave={handleDragLeave}
-      onDrop={handleDrop}
-      onDragOver={(e) => e.preventDefault()}
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
-      onTouchMove={handleTouchMove}
-      className={showDrop ? 'drop_area' : 'hide_drop'}
-    >
+    <div 
+    onDragEnter={()=>{setShowDrop(true)}}
+    onDragLeave={()=>{setShowDrop(false)}}
+    onTouchStart={() => setShowDrop(true)}
+    onDrop={()=>{
+        onDrop();
+        setShowDrop(false)
+    }}
+    onDragOver={e => e.preventDefault()}
+    className={showDrop? "drop_area": "hide_drop"}>
       here
     </div>
-  );
-};
+  )
+}
 
-export default DropArea;
+export default DropArea
