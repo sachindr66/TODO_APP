@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  color: white;
+  color: #ffffff;
 }
 
 body{
@@ -13,5 +13,4 @@ body{
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(136deg, #3a1c71, #d76d77, #ffaf7b);
-   /* background: url(https://cdn.vectorstock.com/i/1000x1000/65/49/black-hexagon-rgb-background-vector-37936549.webp); */
 }
